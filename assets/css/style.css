@@ -9,20 +9,26 @@
 body{
     background-color: #E0E5EC;
 }
+.main-body{
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.25)), url(../img/1.jpg); */
+    transform: scale(5deg);
+}
 .card-bg{
+    
   background-color: #E0E5EC;
-  margin: 150px auto 0px;
-  border: 0px ;
+  margin: 120px auto 0px;
+  border: 0px solid white ;
   border-radius: 15px;
-  box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+  box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.3),
             9px 9px 9px rgba(0,0,0,0.1);
 }
 .card-body .title h2{
     font-size: 55px;
     text-align: center;
-    margin: 40px auto 0px;
-    color: #262524;
+    margin: 40px auto 40px;
+    color: #575757;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .day{
     width: 150px;
@@ -90,8 +96,8 @@ body{
     background-color: #E0E5EC;
     border: 0px ;
     border-radius: 15px;
-    box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
-            10px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: -8px -8px 8px 8px rgba(255,255,255,0.2),
+            8px 8px 8px rgba(0,0,0,0.1);
     margin: 5px ;
     padding: 10px 25px;
     display: inline;
@@ -107,11 +113,47 @@ body{
 	box-shadow: inset 3px 3px 5px rgba(255,255,255,.1);
 	box-shadow: inset -2px -2px 5px rgba(0,0,0,.1);
 }
+.social{
+    padding: 20px;
+    margin: 20px auto 20px ;
+    text-align: center;
+}
+.social-icon-fb{
+    background-color: #E0E5EC;
+    width: 50px;
+    margin-right: 10px;
+    padding: 10px 17px;
+    border: 0px solid #262524;
+    border-radius: 10%;
+    box-shadow: -8px -8px 8px 8px rgba(255,255,255,0.2),
+            8px 8px 8px rgba(0,0,0,0.1);
+}
+.social-icon-tw{
+    background-color: #E0E5EC;
+    width: 50px;
+    padding: 10px 15px;
+    border: 0px solid #262524;
+    border-radius: 10%;
+    margin-right: 10px;
+    box-shadow: -8px -8px 8px 8px rgba(255,255,255,0.2),
+            8px 8px 8px rgba(0,0,0,0.1);
+}
+.social-icon-ins{
+    background-color: #E0E5EC;
+    width: 50px;
+    padding: 10px 17px;
+    border: 0px solid #262524;
+    border-radius: 10%;
+    box-shadow: -8px -8px 8px 8px rgba(255,255,255,0.2),
+            8px 8px 8px rgba(0,0,0,0.1);
+}
 @media only screen and (max-width: 600px) {
     .card-body .title h2{
         font-size: 35px;
 
     }
+    .input-form:focus{
+        width: 50%;
   }
 
 
