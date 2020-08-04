@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+body{
+    background-color: #E0E5EC;
+}
+.card-bg{
+  background-color: #E0E5EC;
+  margin: 150px auto 0px;
+  border: 0px ;
+  border-radius: 15px;
+  box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+            9px 9px 9px rgba(0,0,0,0.1);
+}
+.card-body .title h2{
+    font-size: 55px;
+    text-align: center;
+    margin: 40px auto 0px;
+    color: #262524;
+    font-weight: 700;
+}
+.day{
+    width: 150px;
+    background-color: #E0E5EC;
+    margin: 30px auto 30px;
+    border: 0px ;
+    border-radius: 15px;
+    box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+    9px 9px 9px rgba(0,0,0,0.1);
+}
+  .hour{
+    width: 150px;
+        background-color: #E0E5EC;
+        margin: 30px auto 30px;
+        border: 0px ;
+        border-radius: 15px;
+        box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+        9px 9px 9px rgba(0,0,0,0.1);
+      
+}
+.min{
+    width: 150px;
+        background-color: #E0E5EC;
+        margin: 30px auto 30px;
+        border: 0px ;
+        border-radius: 15px;
+        box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+        9px 9px 9px rgba(0,0,0,0.1);
+}
+.sec{
+    width: 150px;
+    background-color: #E0E5EC;
+    margin: 30px auto 30px;
+    border: 0px ;
+    border-radius: 15px;
+    box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+    9px 9px 9px rgba(0,0,0,0.1);
+  }
+.time{
+    margin: 0px auto 5px;
+}
+.time h3{
+    margin: auto;
+    padding-top: 10px;
+}
+.time p{
+    margin: auto;
+    padding-bottom: 10px;
+}
+.email-form{
+    margin: 0px auto 0px;
+    text-align: center;
+}
+.input-form{
+    background-color: white;
+    border: 0px ;
+    border-radius: 15px;
+    box-shadow: -9px -9px 9px 9px rgba(255,255,255,0.2),
+            9px 9px 9px rgba(0,0,0,0.1);
+    margin: 5px ;
+    display: inline;
+    
+}
+.soft-button{
+    background-color: #E0E5EC;
+    border: 0px ;
+    border-radius: 15px;
+    box-shadow: -10px -10px 10px 10px rgba(255,255,255,0.2),
+            10px 10px 10px rgba(0,0,0,0.1);
+    margin: 5px ;
+    padding: 10px 25px;
+    display: inline;
+
+}
+
+
+.input-form:focus{
+	box-shadow: inset 3px 3px 5px rgba(255,255,255,.1);
+	box-shadow: inset -2px -2px 5px rgba(0,0,0,.2);
+}
+.soft-button:hover{
+	box-shadow: inset 3px 3px 5px rgba(255,255,255,.1);
+	box-shadow: inset -2px -2px 5px rgba(0,0,0,.1);
+}
+@media only screen and (max-width: 600px) {
+    .card-body .title h2{
+        font-size: 35px;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* 
+box-shadow: 3px 3px 5px rgba(0,0,0,.7),
+	-2px -2px 5px rgba(255,255,255,.1);
+	background: transparent; */

@@ -9,9 +9,79 @@
 </head>
 <body>
 
+    <div class="container">
+    <div class="card w-75 card-bg">
+        <div class="card-body">
+           <div class="title mx-auto">
+            <h2>Comming Soon</h2>
+           </div>
+           <div class="time mx-auto">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card day">
+                        <h3 id="day">00</h3>
+                        <p>Days</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card hour mx-auto">
+                        <h3 id="hour">00</h3>
+                        <p>Hours</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card min mx-auto">
+                        <h3 id="min">00</h3>
+                        <p>Mintues</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card sec">
+                        <h3 id="sec">00</h3>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="email-form">
+                <div class="form-group">
+                    <input class="form-control w-50 input-form" type="email" placeholder="Eneter Your Email">
+                    <input class=" soft-button" type="submit" value="Subscribe">
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+        
+    </div>
     
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+
+    <script>
+        var count = new Date("aug 7,2020 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var d = count - now;
+
+            var days = Math.floor(d/(1000*60*60*24));
+            var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+            var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+            var seconds = Math.floor((d%(1000*60))/(1000));
+
+            document.getElementById("day").innerHTML = days;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("min").innerHTML = minutes;
+            document.getElementById("sec").innerHTML = seconds;
+
+
+            if(d <= 0){
+                clearInterval(x);
+            }
+
+            
+        },1000);
+    </script>
 </body>
 </html>
